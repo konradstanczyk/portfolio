@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link href="../../style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Konrad Stańczyk CV</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+          Konrad Stańczyk
+          </a>
+      <div class="navbar-links-style">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../../index.html" id="about"></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../projekty.html" id="projects"></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../../kontakt.html" id="contact"></a>
+              </li>
+          </ul>
+          <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+            <button type="button" id="pl" class="custom-btn btn1">Polski</button>
+            <button type="button" id="en" class="custom-btn btn1">English</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </nav>
+
+      <div class="container">
+        <div class="bars_container" id="bars_container"></div>
+  
+        <div class="buttons_container">
+          <input
+            type="range"
+            id="slider"
+            min="10"
+            max="100"
+            step="5"
+            value="50"
+          />
+          <select name="" id="algo">
+            <option value="bubble" id="sort0"></option>
+            <option value="quick"  id="sort1"></option>
+          </select>
+          <button id="randomize"></button>
+          <button id="sort" ></button>
+        </div>
+      </div>
+
+</body>
+</html>
